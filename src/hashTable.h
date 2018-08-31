@@ -3,7 +3,7 @@
 
 #define STRING_SIZE (-1)
 
-typedef enum bucketState{occupied, empty, deleted};
+typedef enum bucketState{occupied, empty, deleted} bucketState;
 
 typedef struct bucket
 {

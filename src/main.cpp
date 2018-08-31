@@ -202,7 +202,7 @@ void print(char *month, int year, float total, float countyTax, float stateTax, 
 int requestedExit(int needsClear)
 {
 	char read;
-	printf("Do you wish to perform another calculation? (Y/N): ");
+	printf("\nDo you wish to perform another calculation? (Y/N): ");
 	if(needsClear)
 		while(getchar() != '\n');
 	scanf("%c",&read);

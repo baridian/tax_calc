@@ -192,7 +192,7 @@ void freeHashTable(hashTable table)
 	int i = 0;
 	for (; i < table.allocated; i++)
 	{
-		if (table.table[i].state)
+		if (table.table[i].state == occupied)
 		{
 			free(table.table[i].key);
 			free(table.table[i].data);
