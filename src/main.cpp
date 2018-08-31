@@ -147,10 +147,8 @@ void getInput(hashTable validMonths, char *month, int *year, float *total)
 		if(scanf("%d",year)) /*if value read in*/
 			invalid = 0;
 		else
-		{
-			while(getchar() != '\n'); /*clear stdin*/
 			printf("Error: invalid year input.\n");
-		}
+		while(getchar() != '\n'); /*clear stdin*/
 	}
 	
 	invalid = 1;
